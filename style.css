@@ -1,0 +1,52 @@
+ /*==================== common css style start  ===================*/
+#banner-section{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),url('./images/banner-image.png');
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    color: #ffffff;
+}
+.common-bg{
+    background-color: #b68c5a;
+}
+
+textarea{
+    resize: none ;
+}
+
+.carousel-item::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+/*==================== common css style end  ===================*/
+/*=============== some important media query for banner and carousel  ================*/
+
+@media only screen and (min-width:992px){ 
+    .banner-title{
+        font-size: 65px;
+    }
+    #banner-section{
+        height: 80vh;
+    }
+    
+}
+
+@media only screen and (max-width:992px){ 
+    .carousel-item >img{
+        object-fit: cover;
+        height: 70vh;
+    }
+    .carousel-caption{
+        margin-bottom: 10px;
+    }   
+}
+
+/*=============== some important media query for banner and carousel  ================*/
